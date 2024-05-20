@@ -7,7 +7,7 @@ const app = express();
 const PORT = 5000;
 
 app.use((req, res, next) => {
-  const allowedOrigins = ["http://localhost:3000"];
+  const allowedOrigins = ["http://localhost:3000","https://vercel.com/vijayrurs-projects/assignment-frontend"];
   const origin = req.headers.origin;
 
   if (allowedOrigins.includes(origin)) {
